@@ -4,10 +4,19 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.P01_HomePage;
+
+import static base.TestBase.driver;
 
 public class D01_RegisterStepsDef {
-    @Given(": User navigate to register page")
-    public void userNavigateToRegisterPage() {
+    P01_HomePage HomePage = new P01_HomePage(driver);
+
+    @Given(": User Change Currency & navigate to register page")
+    public void userChangeCurrencyNavigateToRegisterPage() {
+        HomePage.SelectEuroCurrency();
+        HomePage.ClickOnRegisterPageLink();
+
+
     }
 
     @When(":Selecting Gender")
@@ -53,4 +62,7 @@ public class D01_RegisterStepsDef {
     @Then(":Success Message of Registration will appear")
     public void successMessageOfRegistrationWillAppear() {
     }
+
+
+
 }

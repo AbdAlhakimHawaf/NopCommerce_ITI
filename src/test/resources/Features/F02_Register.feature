@@ -1,7 +1,7 @@
 @smoke
   Feature: Registration Feature
     Scenario: Creating new account so I can login using valid data
-      Given : User navigate to register page
+      Given : User Change Currency & navigate to register page
       When :Selecting Gender
       And :Filling First name
       And :Filling Last Name
