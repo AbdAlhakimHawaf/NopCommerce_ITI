@@ -47,7 +47,7 @@ public class D01_RegisterStepsDef {
 
     @And(":Filling Email")
     public void fillingEmail() {
-        RegisterPage.SetEmailField("M.Ahmedddddddddd@gmail.com");
+        RegisterPage.SetEmailField("M.AhmeddddddddAA@gmail.com");
     }
 
     @And(":Filling Company name")
