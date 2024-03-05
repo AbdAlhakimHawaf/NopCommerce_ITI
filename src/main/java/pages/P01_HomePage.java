@@ -45,5 +45,19 @@ public class P01_HomePage extends P00_BasePage {
     public void ClickOnSearchButton(){
         ClickOnElement(SearchButton);
     }
+    By FacebookFollowUsLink = By.xpath("//a[@href='http://www.facebook.com/nopCommerce']");
+    public void ClickOnFacebookFollowUsLink(){
+        ClickOnElement(FacebookFollowUsLink);
+    }
+    By YoutubeFollowUsLink = By.xpath("//a[@href='http://www.youtube.com/user/nopCommerce']");
+    public void ClickOnYoutubeFollowUsLink(){
+        ClickOnElement(YoutubeFollowUsLink);
+    }
+    By XFollowUsLink = By.xpath("https://twitter.com/nopCommerce");
+    public void ClickOnXFollowUsLink(){
+        ClickOnElement(XFollowUsLink);
+    }
+
+
 
 }
