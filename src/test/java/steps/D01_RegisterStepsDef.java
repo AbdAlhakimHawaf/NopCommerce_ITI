@@ -41,13 +41,28 @@ public class D01_RegisterStepsDef {
     @And(":Selecting Date of birth d-m-y")
     public void selectingDateOfBirthDMY() {
         RegisterPage.SetDay_DateOfBirthList("20");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         RegisterPage.SetMonth_DateOfBirthList("3");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         RegisterPage.SetYear_DateOfBirthList("1980");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @And(":Filling Email")
     public void fillingEmail() {
-        RegisterPage.SetEmailField("M.AhmeddddddddAA@gmail.com");
+        RegisterPage.SetEmailField("M.AhmedDDD@gmail.com");
     }
 
     @And(":Filling Company name")

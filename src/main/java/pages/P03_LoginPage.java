@@ -8,7 +8,7 @@ public class P03_LoginPage extends P00_BasePage{
         super(Driver);
     }
     By EmailField = By.id("Email");
-    public void SetEmailField(String Text){
+    public void SetEmailField(String Text) {
         SetElementText(EmailField,Text);
     }
     By PasswordField = By.id("Password");

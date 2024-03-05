@@ -26,7 +26,7 @@ public class D02_LoginStepDef {
 
     @When(": User Fill Registered Email Field")
     public void userFillRegisteredEmailField() {
-        LoginPage.SetEmailField("M.AhmeddddddddAA@gmail.com");
+        LoginPage.SetEmailField("M.AhmedDDD@gmail.com");
     }
 
     @And(": User Fill Registered Password")
@@ -46,6 +46,6 @@ public class D02_LoginStepDef {
 
     @Then(": Login Successfully")
     public void loginSuccessfully() {
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@class='topic-block-title']//h2")).getText(),"Welcome to our store");
+       Assert.assertEquals(driver.findElement(By.xpath("//div[@class='topic-block-title']//h2")).getText(),"Welcome to our store");
     }
 }

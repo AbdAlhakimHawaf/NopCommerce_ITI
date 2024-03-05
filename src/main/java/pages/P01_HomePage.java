@@ -10,6 +10,11 @@ public class P01_HomePage extends P00_BasePage {
         super(Driver);
     }
 
+    By LogoLink = By.xpath("//img[@alt='nopCommerce demo store']");
+    public void ClickOnLogoLink(){
+        ClickOnElement(LogoLink);
+    }
+
     By RegisterPageLink = By.xpath("//a[@href='/register?returnUrl=%2F']");
     public void ClickOnRegisterPageLink(){
         ClickOnElement(RegisterPageLink);
@@ -38,6 +43,7 @@ public class P01_HomePage extends P00_BasePage {
         ClickOnElement(ShoppingCartPageLink);
     }
     By SearchField = By.id("small-searchterms");
+
     public void SetSearchField(String Text){
         SetElementText(SearchField,Text);
     }

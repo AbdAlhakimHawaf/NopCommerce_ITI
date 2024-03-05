@@ -25,9 +25,14 @@ public void ClickOnElement(By ElementLocator){
 }
 public void SetElementText(By ElementLocator, String Text){
     scrollToElementView(ElementLocator);
-    new WebDriverWait(driver, Duration.ofSeconds(30))
+    new WebDriverWait(driver, Duration.ofSeconds(10))
             .until(ExpectedConditions.presenceOfElementLocated(ElementLocator));
     driver.findElement(ElementLocator).sendKeys(Text);
+    try {
+        Thread.sleep(1000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
 }
 
 }
