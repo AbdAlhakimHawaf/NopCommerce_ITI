@@ -59,7 +59,7 @@ public class P01_HomePage extends P00_BasePage {
     public void ClickOnYoutubeFollowUsLink(){
         ClickOnElement(YoutubeFollowUsLink);
     }
-    By XFollowUsLink = By.xpath("https://twitter.com/nopCommerce");
+    By XFollowUsLink = By.xpath("//a[@href='https://twitter.com/nopCommerce']");
     public void ClickOnXFollowUsLink(){
         ClickOnElement(XFollowUsLink);
     }

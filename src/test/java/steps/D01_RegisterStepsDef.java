@@ -42,19 +42,19 @@ public class D01_RegisterStepsDef {
     public void selectingDateOfBirthDMY() {
         RegisterPage.SetDay_DateOfBirthList("20");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         RegisterPage.SetMonth_DateOfBirthList("3");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         RegisterPage.SetYear_DateOfBirthList("1980");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
