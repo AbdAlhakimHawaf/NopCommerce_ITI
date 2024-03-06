@@ -57,8 +57,13 @@ public class D04_FollowUsStepDef {
 
     @And(": User Clicks On Youtube Link")
     public void userClicksOnYoutubeLink() {
-        // HomePage.ClickOnYoutubeFollowUsLink(); Uncomment when implemented
+        HomePage.ClickOnYoutubeFollowUsLink();
         switchToNewTab();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Then(": User is redirected to Youtube TAP")
