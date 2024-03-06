@@ -34,7 +34,7 @@ public class D04_FollowUsStepDef {
 
     @Then(": User is redirected to Facebook TAP")
     public void userIsRedirectedToFacebookTAP() {
-        // Your verification logic for the Facebook page
+       Assert.assertEquals(driver.findElement(By.xpath("//span[@class='x1lliihq x6ikm8r x10wlt62 x1n2onr6 xg8j3zb']")).getText(),"See more on Facebook");
         closeCurrentTab();
     }
 
@@ -51,7 +51,7 @@ public class D04_FollowUsStepDef {
 
     @Then(": User is redirected to X TAP")
     public void userIsRedirectedToXTAP() {
-        // Your verification logic for the X page
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='css-1qaijid r-bcqeeo r-qvutc0 r-poiln3'][1]")).getText(),"Don’t miss what’s happening");
         closeCurrentTab();
     }
 
@@ -68,7 +68,9 @@ public class D04_FollowUsStepDef {
 
     @Then(": User is redirected to Youtube TAP")
     public void userIsRedirectedToYoutubeTAP() {
-        // Your verification logic for the Youtube page
+       // Assert.assertEquals(driver.findElement(By.id("tile")).getText(),"Playlists by nopCommerce");
+        //yt-formatted-string[@class='style-scope ytd-guide-signin-promo-renderer']
+        Assert.assertEquals(driver.findElement(By.xpath("//yt-formatted-string[@class='style-scope ytd-guide-signin-promo-renderer']")).getText(),"Sign in to like videos, comment, and subscribe.");
         closeCurrentTab();
     }
 
