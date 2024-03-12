@@ -35,4 +35,18 @@ public void SetElementText(By ElementLocator, String Text){
     }
 }
 
+
+    public void ResetElementText(By ElementLocator, String Text){
+        scrollToElementView(ElementLocator);
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.presenceOfElementLocated(ElementLocator));
+        driver.findElement(ElementLocator).clear();
+        driver.findElement(ElementLocator).sendKeys(Text);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

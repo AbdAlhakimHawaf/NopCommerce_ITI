@@ -1,6 +1,6 @@
 @smoke
-  Feature: Registration Feature
-    Scenario: Creating new account so I can login using valid data
+  Feature: Valid Registration Feature
+      Scenario: Creating new account so I can login using valid data
       Given : User Change Currency & navigate to register page
       When :Selecting Gender
       And :Filling First name
@@ -13,3 +13,4 @@
       And :Filling Confirm Password the same to Password Field
       And :Clicking on Register Button
       Then :Success Message of Registration will appear
+

@@ -34,6 +34,10 @@ public class P01_HomePage extends P00_BasePage {
     public void ClickOnLoginPageLink(){
         ClickOnElement(LoginPageLink);
     }
+    By LogoutPageLink = By.xpath("//a[@class='ico-logout']");
+    public void ClickOnLogoutPageLink(){
+        ClickOnElement(LogoutPageLink);
+    }
     By WishListPageLink = By.xpath("//a[@class='ico-wishlist']");
     public void ClickOnWishListPageLink(){
         ClickOnElement(WishListPageLink);

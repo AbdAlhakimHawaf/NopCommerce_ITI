@@ -12,7 +12,7 @@ import pages.P05_ShoppingCartPage;
 
 import static base.TestBase.driver;
 
-public class D03_SearchAndAddingItemsToCartStepDef {
+public class D04_SearchAndAddingItemsToCartStepDef {
     String ItemName;
     P01_HomePage HomePage = new P01_HomePage(driver);
     P04_SearchPage SearchPage =new P04_SearchPage(driver);

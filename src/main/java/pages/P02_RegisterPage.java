@@ -62,6 +62,9 @@ public class P02_RegisterPage extends P00_BasePage{
     public void SetConfirmPasswordField(String Text){
         SetElementText(ConfirmPasswordField, Text);
     }
+    public void ResetConfirmPasswordField(String Text){
+        ResetElementText(ConfirmPasswordField, Text);
+    }
 
     By RegisterButton = By.id("register-button");
     public void ClickOnRegisterButton(){

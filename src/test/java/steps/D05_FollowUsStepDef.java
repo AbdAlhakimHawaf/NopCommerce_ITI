@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 import static base.TestBase.driver;
 
-public class D04_FollowUsStepDef {
+public class D05_FollowUsStepDef {
     ArrayList<String> tabs;
     P01_HomePage HomePage = new P01_HomePage(driver);
 
@@ -83,4 +83,6 @@ public class D04_FollowUsStepDef {
         driver.close();
         driver.switchTo().window(tabs.get(0));
     }
+
+
 }

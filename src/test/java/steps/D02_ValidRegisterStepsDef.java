@@ -11,7 +11,7 @@ import pages.P02_RegisterPage;
 
 import static base.TestBase.driver;
 
-public class D01_RegisterStepsDef {
+public class D02_ValidRegisterStepsDef {
     P01_HomePage HomePage = new P01_HomePage(driver);
     P02_RegisterPage RegisterPage = new P02_RegisterPage(driver);
 
@@ -19,7 +19,6 @@ public class D01_RegisterStepsDef {
     public void userChangeCurrencyNavigateToRegisterPage() {
         HomePage.SelectEuroCurrency();
         HomePage.ClickOnRegisterPageLink();
-
 
     }
 
